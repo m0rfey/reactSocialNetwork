@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import UserPosts from "./UserPosts";
+import './Profile.css'
 
 class Profile extends Component {
     render() {

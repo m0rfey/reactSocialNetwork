@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './NavbarItem.css'
 
 class NavbarItem extends Component {
     constructor(props) {

@@ -1,0 +1,11 @@
+.user-posts {
+    display: grid;
+    grid-area: user-posts;
+    background-color: aliceblue;
+    grid-template-areas:
+        "new-post"
+        "posts";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 10fr;
+    grid-gap: 1vmin;
+}

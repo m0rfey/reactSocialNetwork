@@ -1,0 +1,4 @@
+.app-footer {
+    grid-area: app-footer;
+    background-color: darkmagenta;
+}

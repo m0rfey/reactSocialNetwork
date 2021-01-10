@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
+import './Posts.css'
 
 class Posts extends Component {
     render() {

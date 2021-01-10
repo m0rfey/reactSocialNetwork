@@ -1,0 +1,4 @@
+.new-post {
+    grid-area: new-post;
+    background-color: blueviolet;
+}
