@@ -1,4 +1,4 @@
-.app-nav {
-    grid-area: app-nav;
+.menu {
+    grid-area: menu;
     background-color: chartreuse;
 }

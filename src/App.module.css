@@ -1,11 +1,11 @@
-.app-wrapper {
+.wrapper {
     display: grid;
     margin: 0 auto;
     width: 1280px;
     grid-template-areas:
-            "app-header app-header"
-            "app-nav app-content"
-            "app-footer app-footer";
+            "header header"
+            "menu content"
+            "footer footer";
     grid-template-rows: 150px 10fr;
     grid-template-columns: 2fr 10fr;
     grid-gap: 1vmin;

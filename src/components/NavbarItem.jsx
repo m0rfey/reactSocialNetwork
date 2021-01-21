@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import './NavbarItem.css'
+import style from './NavbarItem.module.css'
 
 class NavbarItem extends Component {
     constructor(props) {
@@ -8,7 +8,7 @@ class NavbarItem extends Component {
 
     render() {
         return (
-            <div className="nav-item">
+            <div className={style.item}>
                 <a href={this.props.linkPath}>{this.props.linkName}</a>
             </div>
         );

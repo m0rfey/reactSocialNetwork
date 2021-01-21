@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import NavbarItem from './NavbarItem'
-import './Navbar.css'
+import style from './Navbar.module.css'
 
 class Navbar extends Component {
 
@@ -13,7 +13,7 @@ class Navbar extends Component {
             "Settings"
         ]
         return (
-            <nav className='app-nav'>
+            <nav className={style.menu}>
                 {
                     navNames.map((linkName, i) => {
                         return (<NavbarItem linkName={linkName} linkPath="#"/>)

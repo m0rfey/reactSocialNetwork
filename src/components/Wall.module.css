@@ -1,11 +1,21 @@
-.user-posts {
+.wall {
     display: grid;
-    grid-area: user-posts;
+    grid-area: wall;
     background-color: aliceblue;
     grid-template-areas:
-        "new-post"
+        "new"
         "posts";
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 10fr;
     grid-gap: 1vmin;
+}
+
+.new {
+    grid-area: new;
+    background-color: blueviolet;
+}
+
+.posts {
+    grid-area: posts;
+    background-color: brown;
 }

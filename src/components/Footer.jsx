@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import './Footer.css'
+import style from './Footer.module.css'
 
 class Footer extends Component {
     render() {
         return (
-            <footer className='app-footer'>
+            <footer className={style.footer}>
                 Footer
             </footer>
         )
