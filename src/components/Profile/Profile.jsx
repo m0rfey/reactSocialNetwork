@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Wall from "./Wall";
+import Wall from "../Wall/Wall";
 import style from './Profile.module.css'
 
 class Profile extends Component {
