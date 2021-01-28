@@ -1,22 +1,22 @@
 import React, {Component} from 'react';
-import NavbarItem from './NavbarItem'
+import Item from './Item/Item'
 import style from './Navbar.module.css'
 
 class Navbar extends Component {
 
     render() {
         let navNames = [
-            "Profile",
-            "Messages",
-            "News",
-            "Music",
-            "Settings"
+            ["Profile", true],
+            ["Messages", false],
+            ["News", false],
+            ["Music", false],
+            ["Settings", false],
         ]
         return (
             <nav className={style.menu}>
                 {
-                    navNames.map((linkName, i) => {
-                        return (<NavbarItem linkName={linkName} linkPath="#" key={i}/>)
+                    navNames.map((item, i) => {
+                        return (<Item linkName={item[0]} active={item[1]} linkPath="#" key={i}/>)
                     })
                 }
             </nav>
