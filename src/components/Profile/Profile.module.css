@@ -3,11 +3,11 @@
     grid-area: content;
     background-color: coral;
     grid-template-areas:
-        "content-background content-background"
-        "avatar profile"
-        "wall wall";
-    grid-template-rows: 250px 10fr;
-    grid-template-columns: 5fr 10fr;
+        "content-background"
+        "user"
+        "wall";
+    grid-template-rows: 250px;
+    grid-template-columns: 10fr;
     /*grid-gap: 1vmin;*/
 }
 
@@ -26,14 +26,23 @@
 
 }
 
+.user {
+    display: grid;
+    grid-area: user;
+    grid-template-areas:
+            "avatar profile";
+    grid-template-rows: 10fr;
+    grid-template-columns: 5fr 10fr;
+}
+
 .avatar {
     grid-area: avatar;
-    background-color: blue;
+    /*background-color: blue;*/
     text-align: center;
 }
 
 .profile {
     grid-area: profile;
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
     padding: 1vmin;
 }

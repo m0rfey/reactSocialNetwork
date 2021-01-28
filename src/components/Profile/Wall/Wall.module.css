@@ -1,7 +1,7 @@
 .wall {
     display: grid;
     grid-area: wall;
-    background-color: aliceblue;
+    /*background-color: aliceblue;*/
     grid-template-areas:
         "new"
         "posts";
@@ -11,12 +11,27 @@
 }
 
 .new {
+    display: grid;
     grid-area: new;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
+    grid-template-areas:
+            "form"
+            "buttons";
+    grid-template-rows: 1fr;
+    grid-template-columns: 10fr;
+    padding-top: 5px;
+}
+.form {
+    grid-area: form;
+    text-align: center;
 }
 
+.buttons {
+    grid-area: buttons;
+    text-align: center;
+}
 .posts {
     grid-area: posts;
-    background-color: brown;
+    /*background-color: brown;*/
     padding: 5px;
 }

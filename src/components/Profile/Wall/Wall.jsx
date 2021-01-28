@@ -35,8 +35,13 @@ class Wall extends Component {
         return (
             <div className={style.wall}>
                 <div className={style.new}>
-                    <textarea name="new-post" id="newPost" cols="145" rows="5"></textarea>
-                    <button> Add post</button>
+                    <div className={style.form}>
+                        <textarea name="new-post" id="newPost" cols="145" rows="5"></textarea>
+                    </div>
+                    <div className={style.buttons}>
+                        <button> Add post</button>
+                    </div>
+
                 </div>
                 <div className={style.posts}>
                     {

@@ -11,14 +11,17 @@ class Profile extends Component {
                         src="https://www.searchenginejournal.com/wp-content/uploads/2018/10/How-to-Boost-Your-Images%E2%80%99-Visibility-on-Google-Images-760x400.png"
                         alt=""/>
                 </div>
-                <div className={style.avatar}>
-                    <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt=""/>
+                <div className={style.user}>
+                    <div className={style.avatar}>
+                        <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt=""/>
+                    </div>
+                    <div className={style.profile}>
+                        <h3>John Smith</h3>
+                        <p>Age: 30</p>
+                        <p>Country: Ukraine</p>
+                    </div>
                 </div>
-                <div className={style.profile}>
-                    <h3>John Smith</h3>
-                    <p>Age: 30</p>
-                    <p>Country: Ukraine</p>
-                </div>
+
                 <Wall/>
             </div>
         )
