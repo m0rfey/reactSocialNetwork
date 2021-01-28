@@ -6,9 +6,9 @@
         "content-background content-background"
         "avatar profile"
         "wall wall";
-    grid-template-rows: 250px repeat(2, 10fr);
+    grid-template-rows: 250px 10fr;
     grid-template-columns: 5fr 10fr;
-    grid-gap: 1vmin;
+    /*grid-gap: 1vmin;*/
 }
 
 .background {
@@ -29,6 +29,7 @@
 .avatar {
     grid-area: avatar;
     background-color: blue;
+    text-align: center;
 }
 
 .profile {

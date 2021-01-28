@@ -15,7 +15,7 @@ class Profile extends Component {
                     <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt=""/>
                 </div>
                 <div className={style.profile}>
-                    <h3>User name</h3>
+                    <h3>John Smith</h3>
                     <p>Age: 30</p>
                     <p>Country: Ukraine</p>
                 </div>

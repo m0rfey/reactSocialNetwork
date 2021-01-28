@@ -8,5 +8,5 @@
             "footer footer";
     grid-template-rows: 150px 10fr;
     grid-template-columns: 2fr 10fr;
-    grid-gap: 1vmin;
+    /*grid-gap: 1vmin;*/
 }

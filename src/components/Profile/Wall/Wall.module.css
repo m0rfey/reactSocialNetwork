@@ -5,9 +5,9 @@
     grid-template-areas:
         "new"
         "posts";
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-template-columns: 10fr;
-    grid-gap: 1vmin;
+    /*grid-gap: 1vmin;*/
 }
 
 .new {
@@ -18,4 +18,5 @@
 .posts {
     grid-area: posts;
     background-color: brown;
+    padding: 5px;
 }

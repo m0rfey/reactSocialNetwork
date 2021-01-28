@@ -1,0 +1,67 @@
+.item {
+    display: grid;
+    grid-area: item;
+    background-color: aliceblue;
+    grid-template-areas:
+        "header"
+        "text";
+    grid-template-rows: 2fr;
+    grid-template-columns: 10fr;
+    grid-gap: 1vmin;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.text {
+    grid-area: text;
+    color: brown;
+    font-size: 16px;
+    padding: 0 5px 0 5px;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-areas:
+        "avatar info";
+    grid-template-rows: repeat(1, 2fr);
+    grid-template-columns: 70px 10fr;
+    /*grid-gap: 1vmin;*/
+}
+
+.avatar {
+    grid-area: avatar;
+}
+
+.info {
+    display: grid;
+    grid-area: info;
+    grid-template-areas:
+        "title"
+        "description";
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: 10fr;
+}
+.title {
+    grid-area: title;
+}
+
+.description {
+    display: grid;
+    grid-area: description;
+    grid-template-areas:
+        "creation editing";
+    grid-template-rows: repeat(1, 2fr);
+    grid-template-columns:  1fr 7fr;
+    font-size: 10px;
+}
+.creation {
+    grid-area: creation;
+}
+.editing {
+    grid-area: editing;
+}
+.item img {
+    width: 50px;
+    border-radius: 50px;
+}
