@@ -2,9 +2,6 @@ import React, {Component} from 'react'
 import style from './NavbarItem.module.css'
 
 class NavbarItem extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

@@ -16,7 +16,7 @@ class Navbar extends Component {
             <nav className={style.menu}>
                 {
                     navNames.map((linkName, i) => {
-                        return (<NavbarItem linkName={linkName} linkPath="#"/>)
+                        return (<NavbarItem linkName={linkName} linkPath="#" key={i}/>)
                     })
                 }
             </nav>

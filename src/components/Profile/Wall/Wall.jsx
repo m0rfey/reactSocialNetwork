@@ -8,14 +8,17 @@ class Wall extends Component {
     render() {
         let items = [
             {
+                "id": 3,
                 "title": "John Smith",
                 "created": "2020-12-29 13:00",
                 "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis earum eligendi est " +
                     "eveniet fugiat, harum hic in inventore natus nobis, non porro praesentium! Alias incidunt minus " +
                     "mollitia quasi ratione?",
-                "edited": false
+                "edited": false,
+                "likes": 100,
             },
             {
+                "id": 2,
                 "title": "John Smith",
                 "created": "2020-12-28 10:00",
                 "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis earum eligendi est " +
@@ -23,13 +26,16 @@ class Wall extends Component {
                     "mollitia quasi ratione? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis earum eligendi est " +
                     "eveniet fugiat, harum hic in inventore natus nobis, non porro praesentium! Alias incidunt minus " +
                     "mollitia quasi ratione?",
-                "edited": true
+                "edited": true,
+                "likes": 10,
             },
             {
+                "id": 1,
                 "title": "John Smith",
                 "created": "2020-12-28 09:00",
                 "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis earum eligendi est ",
-                "edited": true
+                "edited": true,
+                "likes": 50,
             },
         ]
         return (
@@ -47,10 +53,12 @@ class Wall extends Component {
                     {
                         items.map((item, i) => {
                             return (<Item
+                                    key={item.id}
                                     title={item.title}
                                     created={item.created}
                                     message={item.message}
                                     edited={item.edited}
+                                    likes={item.likes}
                                 />
                             )
                         })

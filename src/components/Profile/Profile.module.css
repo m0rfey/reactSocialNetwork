@@ -39,6 +39,7 @@
     grid-area: avatar;
     /*background-color: blue;*/
     text-align: center;
+    margin-top: -50px;
 }
 
 .profile {

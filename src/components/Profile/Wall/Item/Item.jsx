@@ -14,7 +14,7 @@ class Item extends Component {
                     <div className={style.info}>
                         <div className={style.title}>{this.props.title}</div>
                         <div className={style.description}>
-                            <div className={style.creation}>created: {this.props.created}</div>
+                            <div className={style.creation}>{this.props.created}</div>
                             <div className={style.editing}>{this.props.edited ? "Edited" : ""}</div>
                         </div>
                     </div>
@@ -23,7 +23,16 @@ class Item extends Component {
                 <div className={style.text}>
                     <p>{this.props.message}</p>
                 </div>
-
+                <div className={style.buttons}>
+                    <div className={style.like}>
+                        <div className={style.counter}>{this.props.likes}</div>
+                        <button>Like</button>
+                    </div>
+                    <div className={style.settings}>
+                        <button>Edit</button>
+                        <button>Permissions</button>
+                    </div>
+                </div>
             </div>
         )
     }
