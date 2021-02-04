@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import style from './Item.module.css'
+import {NavLink} from "react-router-dom";
 
 class Item extends Component {
 
@@ -7,12 +8,13 @@ class Item extends Component {
         console.log(this.props)
         return (
             <div className={style.item}>
-                <a
-                    href={this.props.linkPath}
-                    className={`${style.row} ${this.props.active ? style.active : ""}`}
+                <NavLink
+                    to={this.props.linkPath}
+                    className={style.row}
+                    activeClassName={style.active}
                 >
                     {this.props.linkName}
-                </a>
+                </NavLink>
             </div>
         );
     }
